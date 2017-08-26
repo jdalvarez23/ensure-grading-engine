@@ -27,7 +27,7 @@ Add the following meta tag:
 ```html
 <meta name="ensure-grader" content="relative_path_to_tests.json">
 ```
-Note: You can also use a link path to a JSON file.
+Note: You can also use an external link path to a JSON file.
 
 <!-- There are two optional attributes: `libraries` and `unit-tests`. `libraries` is always optional and `unit-tests` is only necessary for JS quizzes. More on JS tests [here](#js-tests). -->
 
