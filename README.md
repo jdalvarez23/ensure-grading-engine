@@ -27,8 +27,9 @@ Add the following meta tag:
 ```html
 <meta name="ensure-grader" content="relative_path_to_tests.json">
 ```
+Note: You can also use a link path to a JSON file.
 
-There are two optional attributes: `libraries` and `unit-tests`. `libraries` is always optional and `unit-tests` is only necessary for JS quizzes. More on JS tests [here](#js-tests).
+<!-- There are two optional attributes: `libraries` and `unit-tests`. `libraries` is always optional and `unit-tests` is only necessary for JS quizzes. More on JS tests [here](#js-tests). -->
 
 ### On external websites
 
@@ -362,7 +363,7 @@ Remember, by default every node collected by `"nodes"` or `"children"` must pass
 }
 ```
 
-Options here currently include `"noRepeat"` and `"alwaysRun"`.
+<!-- Options here currently include `"noRepeat"` and `"alwaysRun"`.
 
 By default, a test runs every 1000ms until it either passes or encounters an error. If `"noRepeat"` is set, the test only runs once when the widget loads and does not rerun every 1000ms. If `"alwaysRun"`, the test continues to run even after it passes.
 
@@ -383,7 +384,7 @@ Example of a custom event:
 window.dispatchEvent(new CustomEvent('ud-test', {'detail': 'passed'}));
 ```
 
-I like to use the [jsgrader library](https://github.com/udacity/js-grader) for writing JS tests because it supports grading checkpoints (logic to say "stop grading if this test fails"). You can use it too by setting `libraries="jsgrader"` in the meta tag.].
+I like to use the [jsgrader library](https://github.com/udacity/js-grader) for writing JS tests because it supports grading checkpoints (logic to say "stop grading if this test fails"). You can use it too by setting `libraries="jsgrader"` in the meta tag.]. -->
 
 ### Test States and Debugging
 
