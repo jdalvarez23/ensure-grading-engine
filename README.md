@@ -406,14 +406,14 @@ At the core of Ensure Feedback is the grading engine. The grading engine perform
 * **Registrar**. This file contains the logic for creating new tests when the Feedback is turned on and removing tests when the Feedback is turned off.
 * The `<test-widget>` and everything inside of it were built as custom elements with HTML imports.
 
-### Development Workflow
+### Sample Webpage
 
-1. Run `gulp watch` from `/`
-2. Make changes.
-3. Open `/sample/index.html` to run regression testing.
-4. If you're adding a new feature:
-  * Add new passing and failing tests to `/sample/tests.json` (and modify `/sample/index.html` if necessary).
-  * Update this README to reflect changes (include examples!).
-5. Submit a pull request!
+To view a sample of the grading engine, follow the instructions:
+1. Open this [link](https://jdalvarez23.github.io/ensure-grading-engine/sample/index.html).
+2. Go to [Manage Extensions](chrome://extensions/).
+3. Enable Ensure Front End Feedback Tool extension you either downloaded and installed from source or you downloaded from Chrome Web Store.
+4. Open the Ensure Front End Feedback Tool extension by pressing on Ensure's icon in your extension bar.
+5. Click 'Allow feedback on this domain'.
+
 
 Thank you for reading this far.
