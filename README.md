@@ -88,13 +88,6 @@ Example:
         "nodes": ".test4",
         "get": "count",
         "equals": 2
-      }
-    },
-    {
-      "description": "Test 4 has been dispatched",
-      "definition": {
-        "waitForEvent": "ud-test",
-        "exists": true
       },
       "flags": {
         "noRepeat": true
