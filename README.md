@@ -2,8 +2,8 @@
 
 An improved way to provide visual feedback about any HTML, CSS, or JavaScript of a webpage.
 
-* Unsure on how to make it work? Try our [walkthrough]()!
-* Want to install? Install on [Chrome Web Store]().
+<!-- * Unsure on how to make it work? Try our [walkthrough]()!
+* Want to install? Install on [Chrome Web Store](). -->
 
 ## Installing from Source
 
