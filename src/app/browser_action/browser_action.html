@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="../css/common.css" />
+  <link rel="stylesheet" href="../css/fonts.css" />
+  <link rel="stylesheet" href="../css/ui.css" />
+  <meta charset="UTF-8">
+
+  <style type="text/css">
+    #main {
+      height: 100%;
+      width: 500px;
+      font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    }
+
+    .alert {
+      color: #78f;
+      display: none;
+    }
+
+    .loader {
+      margin-bottom: 1em;
+    }
+
+    .loader-description {
+      margin-bottom: 1em;
+    }
+
+    .autorun.disabled {
+      color: #ccc;
+    }
+
+    #ud-label-loader.disabled {
+      color: #ccc;
+    }
+
+    .warning-block {
+      width: 80%;
+      color: #e00;
+      font-weight: bold;
+    }
+
+    .warning-icon {
+      color: #e9d236;
+    }
+
+    .title-section,
+    .sub-title-section {
+      background-color: #00a5b5;
+      width: 100% !important;
+      color: #ffffff;
+      text-indent: 5px;
+    }
+
+    #body-section {
+      text-indent: 5px;
+      width: 100% !important;
+    }
+
+    #configs {
+      font-size: 1em;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div id="main">
+    <div class="title-section">
+      <h2>Ensure Feedback Tool Settings<span id="configs" class="button fa" title="Configure">&#xf013;</span></h2>
+    </div>
+    <div id="body-section">
+      <div class="loader">
+        <div class="loader-description">
+          Welcome to Ensure's Extension. Visit our <a>website</a> to learn more. You can &nbsp;also write your own frontend grading tests using the API. Learn more &nbsp;<a href="https://github.com/udacity/frontend-grading-engine" target="_blank">here</a>.
+          <br />&nbsp;You can load tests in two ways. <strong>Option 1: Place the following <a>meta tag</a> &nbsp;in your HTML file.</strong>
+        </div>
+        <div id="ud-label-loader" for="ud-file-loader"><strong>Option 2: Load tests from file</strong><br /><br />&nbsp;<input id="ud-file-loader" type="file" accept=".json"></div>
+        <div class="alert"></div>
+      </div>
+      <div class="autorun">
+        <div class="warning-block" style="display: none"><span class="button fa warning-icon">&#xf071</span><span id="warning-text"></div>
+            <form>
+              <label for="allow-feedback">Allow feedback on this domain
+                <input id="allow-feedback" type="checkbox" value="yes">
+              </label>
+            </form>
+      </div>
+    </div>
+    <br />
+    <div class="sub-title-section">
+      <div style="background-color: #00a5b5; width: 100%; height: 2em; line-height: 0.5em;">
+        <p style="font-size: 12px; float: left;">Designed for Mr. David Hayes</p>
+        <p style="font-size: 12px; float: right;">All Rights Reserved © &nbsp; </p>
+      </div>
+    </div>
+  </div>
+  <script src="browser_action.js"></script>
+  </body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Ensure Feedback Tool</title>
+  <style>
+    #whitelist-entry-template {
+      display: none;
+    }
+  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="../css/common.css" />
+  <link rel="stylesheet" href="../css/fonts.css" />
+  <link rel="stylesheet" href="../css/options.css" />
+  <link rel="stylesheet" href="../css/ui.css" />
+</head>
+
+<body>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+        <a class="navbar-brand" href="https://github.com/jdalvarez23/ensure-grading-engine">Ensure</a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li id="about" class="active"><a href="javascript:void(0)" class="click">About</a></li>
+          <li id="domains"><a href="javascript:void(0)" class="click">Domains</a></li>
+          <li id="usage"><a href="javascript:void(0)" class="click">Usage</a></li>
+          <li id="contact"><a href="javascript:void(0)" class="click">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <div id="about_Section">
+      <h3>About</h3>
+      <hr />
+      <p>Ensure's Front End Feedback tool is used to provide visual feedback about any HTML, CSS, or JavaScript of a webpage.</p>
+      <h5>Extension Information:</h5>
+      <p>Current Version: <code id="extension-version"></code></p>
+      <p>Current Browser: <code id="browser-name"></code></p>
+    </div>
+    <div id="domains_Section" hidden>
+      <h3>Domains</h3>
+      <hr />
+      <div>
+        <h5 style="line-height: 1.5em;">Whitelist</h5>
+        <hr />
+      </div>
+      <!-- Table Here -->
+      <table class="table table-striped table-hover whitelist">
+        <thead>
+          <tr>
+            <th>Whitelist Domains</th>
+            <th>
+              <a id="remote-add" class="add-remote-entry btn btn-primary btn-sm" style="float: right;">Add Domain</a>
+            </th>
+          </tr>
+        </thead>
+        <tbody id="remote-whitelist">
+          <tr id="whitelist-entry-template" class="whitelist-row">
+            <td class="entry">host</td>
+            <td class="remove"><span class="remove-entry btn btn-danger btn-sm fa" title="Remove" style="float: right;">&#xf00d;</span></td>
+          </tr>
+          <tr class="whitelist-placeholder">
+            <td class="whitelist-message" style="width: 100%;">No current saved domains.</td>
+            <td><span style="float: right;"></span></td>
+          </tr>
+        </tbody>
+      </table>
+      <table class="table table-hover whitelist">
+        <thead>
+          <tr>
+            <th>Local Directories</th>
+          </tr>
+        </thead>
+        <tbody id="local-whitelist">
+          <tr class="whitelist-placeholder">
+            <td class="whitelist-message">No current saved domains.</td>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+    <div id="usage_Section" hidden>
+      <h3>Usage</h3>
+      <hr />
+      <p>If you are unsure on how this extension works or you cannot make it work, please visit our <a href="https://github.com/jdalvarez23/ensure-grading-engine/">API</a> to learn.</p>
+      <h5>Bugs</h5>
+      <p>It is unusual for this extension to bug when a new browser version becomes available. Please report bugs, or other concerns, to <code>jdalvarez23@gmail.com</code>. You can also visit our GitHub project and create a new <a href="https://github.com/jdalvarez23/ensure-grading-engine/issues">issue</a>.
+        In your email or GitHub issue, be sure to include your browser name, browser version, and the currently installed version of this extension.</p>
+    </div>
+    <div id="contact_Section" hidden>
+      <h3>Contact</h3>
+      <hr />
+      <p>Currently, you can contact us at the emails specified below.</p>
+      <p>Main Developer: <code>jdalvarez23@gmail.com</code></p>
+      <p>Instructor: <code>Mr. Hayes' Email Here</code></p>
+    </div>
+  </div>
+  <script src="options.js"></script>
+</body>
+
+</html>

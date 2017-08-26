@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Viewports -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="ensure-grader" content="ensure.json">
+  <!-- Desc. -->
+  <title>Bootstrap Quiz</title>
+  <meta name="description" content="A small bootstrap quiz using Ensure's Grader">
+  <!-- CSS -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link class="bootstrap" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/flatly/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <!-- Custom CSS -->
+  <link href="assets/css/portfolio-item.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Bootstrap Quiz</a>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">Services</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+  </nav>
+  <!-- Page Content -->
+  <div class="container">
+    <div id="main_Content">
+      <!-- Portfolio Item Heading -->
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class="page-header">Albert G. Lane Technical <small>College Prep</small></h1>
+        </div>
+      </div>
+      <!-- /.row -->
+      <!-- Portfolio Item Row -->
+      <div class="row">
+        <div class="col-md-8">
+          <img class="img-responsive" src="assets/img/lane_Tech.png" alt="Lane Tech High School">
+        </div>
+        <div id="school_Description" class="col-md-4">
+          <h3>Description</h3>
+          <p>Lane Tech High School is a public 4-year selective enrollment magnet high school located in the Roscoe Village neighborhood on the north side of Chicago, United States.</p>
+          <div id="school_Awards">
+            <h3>Awards</h3>
+            <ul>
+              <li>National Blue Ribbon School - 2012</li>
+              <li>Best High Schools in Illinois 2016 - U.S. News & World Report</li>
+              <li>Best High Schools in Illinois 2015 - U.S. News & World Report</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="form_Div" class="row">
+        <div class="col-md-3">
+          <div class="form-group">
+            <label for="input_Text">Name:</label>
+            <input type="text" class="form-control" id="text_Input">
+          </div>
+          <p id="input_Text"></p>
+        </div>
+      </div>
+    </div>
+    <!-- /.row -->
+    <hr>
+    <!-- Footer -->
+    <footer>
+      <div class="row">
+        <div class="col-md-12">
+          <p>Copyright © Mr. Hayes Tech Company 2017</p>
+        </div>
+      </div>
+      <!-- /.row -->
+    </footer>
+  </div>
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <!-- Bootstrap Core JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script>
+    $('#text_Input').keyup(function() {
+      $('#input_Text').text($(this).val());
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,107 @@
+[{
+  "name": "Bootstrap Website",
+  "code": "You did it! The page meets all requirements!",
+  "tests": [
+    {
+      "description": "CSS - The navbar has a teal (#18bc9c)[rgb(24, 188, 156)] background color.",
+      "definition": {
+        "nodes": ".navbar",
+        "cssProperty": "backgroundColor",
+        "equals": "rgb(24, 188, 156)"
+      }
+    },
+    {
+      "description": "CSS - The image has a width of 655px.",
+      "definition": {
+        "nodes": "img",
+        "cssProperty": "width",
+        "equals": "655px"
+      }
+    },
+    {
+      "description": "CSS - The h3 elements have a font size of 26px.",
+      "definition": {
+        "nodes": "h3",
+        "cssProperty": "fontSize",
+        "equals": "26px"
+      }
+    },
+    {
+      "description": "CSS - The page contains the bootstrap css framework.",
+      "definition": {
+        "nodes": "head .bootstrap",
+        "attribute": "href",
+        "hasSubstring": "bootstrap"
+      }
+    },
+    {
+      "description": "HTML - The navbar has in between 2-5 link (a) elements.",
+      "definition": {
+        "nodes": ".navbar-collapse > ul > li ",
+        "get": "count",
+        "isInRange": {
+          "lower": 2,
+          "upper": 5
+        }
+      }
+    },
+    {
+      "description": "HTML - The page contains one image.",
+      "definition": {
+        "nodes": "img",
+        "get": "count",
+        "equals": 1
+      }
+    },
+    {
+      "description": "HTML - The image has a relative source.",
+      "definition": {
+        "nodes": "img",
+        "attribute": "src",
+        "hasSubstring": "^assets/img/lane_Tech.png$"
+      }
+    },
+    {
+      "description": "HTML - The image has an alt attribute.",
+      "definition": {
+        "nodes": "img",
+        "attribute": "alt",
+        "hasSubstring": ".+"
+      }
+    },
+    {
+      "description": "HTML - There is a paragraph (p) after the description header (h3) in the school description div.",
+      "definition": {
+        "nodes": "#school_Description > h3 + p",
+        "exists": true
+      }
+    },
+    {
+      "description": "HTML - The description paragraph (p) contains the words 'Lane Tech High School'",
+      "definition": {
+        "nodes": "#school_Description > h3 + p",
+        "get": "innerHTML",
+        "hasSubstring": "Lane Tech High School"
+      }
+    },
+    {
+      "description": "HTML - The input value is 'Ensure'",
+      "definition": {
+        "nodes": "#form_Div > .col-md-3 > p",
+        "get": "innerHTML",
+        "hasSubstring": "Ensure"
+      },
+      "flags": {
+        "alwaysRun": true
+      }
+    },
+    {
+      "description": "HTML - There is at least two awards in the school awards div.",
+      "definition": {
+        "nodes": "#school_Awards > ul > li ",
+        "get": "count",
+        "isGreaterThan": 2
+      }
+    }
+  ]
+  }]
