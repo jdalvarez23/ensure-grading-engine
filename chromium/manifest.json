@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "manifest_version": 2,
   "description": "An improved way to provide visual feedback about any HTML, CSS, or JavaScript of a webpage.",
-  "homepage_url": "https://github.com/jdalvarez23/ensure-grading-engine/issues",
+  "homepage_url": "https://github.com/jdalvarez23/ensure-grading-engine/",
   "icons": {
     "16": "icons/icon.png",
     "32": "icons/Icon-32.png",
