@@ -363,11 +363,11 @@ Remember, by default every node collected by `"nodes"` or `"children"` must pass
 }
 ```
 
-<!-- Options here currently include `"noRepeat"` and `"alwaysRun"`.
+Options here currently include `"noRepeat"` and `"alwaysRun"`.
 
 By default, a test runs every 1000ms until it either passes or encounters an error. If `"noRepeat"` is set, the test only runs once when the widget loads and does not rerun every 1000ms. If `"alwaysRun"`, the test continues to run even after it passes.
 
-###<a name="js-tests"></a> JavaScript Tests
+<!-- ###<a name="js-tests"></a> JavaScript Tests
 
 ```javascript
 "definition": {
