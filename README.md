@@ -16,7 +16,7 @@ An improved way to provide visual feedback about any HTML, CSS, or JavaScript of
   * Click 'Load unpacked extension...'
   * Select `build > chromium > ext`
 
-[**More on development**](#how-ensure-feedback-works)
+<!-- [**More on development**](#how-ensure-feedback-works) -->
 
 ## Loading Tests
 
