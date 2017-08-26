@@ -14,7 +14,7 @@ An improved way to provide visual feedback about any HTML, CSS, or JavaScript of
   * Open the Extensions window (`chrome://extensions`)
   * Check 'Developer Mode'
   * Click 'Load unpacked extension...'
-  * Select `ext/`
+  * Select `build > chromium > ext`
 
 [**More on development**](#how-ensure-feedback-works)
 
